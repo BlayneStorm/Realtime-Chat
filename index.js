@@ -1,10 +1,12 @@
 var express = require("express"); //looks into node_modules folder for express and require it in this file so we can use it
 var socket = require("socket.io");
 
+const port = process.env.PORT || 4000;
+
 //App setup
 var app = express();
-var server = app.listen(4000, function() {
-    console.log("Listening to requests on port 4000")
+var server = app.listen(port, function() {
+    console.log(`Listening to requests on port ${port}`);
 });
 
 //Static files
