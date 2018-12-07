@@ -1,7 +1,7 @@
 //Establish the connection to the server to create the websocket between the 2 (client and server)
 
 //Make connection - because we loaded in the library in the html, we have access to the 'io' variable
-var socket = io.connect("http://localhost:4000"); //argument = where we want to make this websocket connection to
+var socket = io.connect("https://shrouded-hollows-26408.herokuapp.com"); //argument = where we want to make this websocket connection to
 
 //Query DOM
 var message = document.getElementById("message");
